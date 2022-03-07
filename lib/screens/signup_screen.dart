@@ -75,8 +75,7 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 
   void navigateToLogin() {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => LoginScreen()));
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginScreen()));
   }
 
   @override
@@ -168,7 +167,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             color: primaryColor,
                           ),
                         )
-                      : const Text('Log In'),
+                      : const Text('Sign up'),
                   width: double.infinity,
                   alignment: Alignment.center,
                   padding: const EdgeInsets.symmetric(vertical: 12),
@@ -184,20 +183,20 @@ class _SignupScreenState extends State<SignupScreen> {
                 child: Container(),
                 flex: 2,
               ),
-              GestureDetector(
-                onTap: navigateToLogin,
-                child: Container(
-                  child: const Text(
-                    " Sign up",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 8,
-                  ),
-                ),
-              ),
+              // GestureDetector(
+              //   onTap: navigateToLogin,
+              //   child: Container(
+              //     child: const Text(
+              //       " Sign up",
+              //       style: TextStyle(
+              //         fontWeight: FontWeight.bold,
+              //       ),
+              //     ),
+              //     padding: const EdgeInsets.symmetric(
+              //       vertical: 8,
+              //     ),
+              //   ),
+              // ),
               const SizedBox(
                 height: 10,
               ),

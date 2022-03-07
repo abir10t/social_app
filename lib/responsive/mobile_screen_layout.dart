@@ -1,16 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:instragram_clone/utils/global_variables.dart';
 
 import '../utils/colors.dart';
 
-class MobileScreenLayout extends StatefulWidget {
+class MobileScreenLayout extends StatefulWidget
+{
   const MobileScreenLayout({Key? key}) : super(key: key);
 
   @override
   State<MobileScreenLayout> createState() => _MobileScreenLayoutState();
 }
 
-class _MobileScreenLayoutState extends State<MobileScreenLayout> {
+class _MobileScreenLayoutState extends State<MobileScreenLayout>
+{
   int _page = 0;
   late PageController pageController; // for tabs animation
 
@@ -32,7 +35,8 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
     });
   }
 
-  void navigationTapped(int page) {
+  void navigationTapped(int page)
+  {
     //Animating Page
     pageController.jumpToPage(page);
   }
@@ -42,14 +46,7 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
     return Scaffold(
       body: SafeArea(
         child: PageView(
-          children: [
-            Text('hello'),
-            Text('i am'),
-            Text('i am'),
-            Text('i am'),
-            Text('i am'),
-          ],
-
+          children: homeScreenItems,
      //   children: homeScreenItems,
           controller: pageController,
           onPageChanged: onPageChanged,

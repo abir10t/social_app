@@ -6,7 +6,6 @@ import 'package:instragram_clone/responsive/mobile_screen_layout.dart';
 import 'package:instragram_clone/responsive/responsive_layout_screen.dart';
 import 'package:instragram_clone/responsive/web_screen_layout.dart';
 import 'package:instragram_clone/screens/login_screen.dart';
-import 'package:instragram_clone/screens/signup_screen.dart';
 import 'package:instragram_clone/utils/colors.dart';
 import 'package:provider/provider.dart';
 
@@ -17,7 +16,8 @@ void main() async
   runApp(const MyApp()) ;
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget
+{
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
