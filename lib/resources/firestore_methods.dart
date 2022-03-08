@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:instragram_clone/resources/storage_method.dart';
+import 'package:uuid/uuid.dart';
 
 import '../models/post.dart';
 
