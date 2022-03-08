@@ -6,7 +6,6 @@ import 'package:instragram_clone/providers/user_provider.dart';
 import 'package:instragram_clone/utils/colors.dart';
 import 'package:instragram_clone/utils/utis.dart';
 import 'package:provider/provider.dart';
-
 import '../models/user.dart';
 
 class AddPostScreen extends StatefulWidget {
@@ -19,6 +18,18 @@ class AddPostScreen extends StatefulWidget {
 class _AddPostScreenState extends State<AddPostScreen> {
   Uint8List? _file;
   final TextEditingController _descriptionController = TextEditingController();
+
+  void postImage( String uid, String username, String profImage) async{
+     try{
+
+     }
+     catch(e){
+
+     }
+
+
+  }
+
 
   _selectImage(BuildContext parentContext) async {
     return showDialog(
@@ -61,6 +72,12 @@ class _AddPostScreenState extends State<AddPostScreen> {
   }
 
   @override
+  void dispose(){
+    super.dispose();
+    _descriptionController.dispose();
+  }
+
+  @override
   Widget build(BuildContext context)
   {
 
@@ -81,7 +98,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
         title: Text('Post to'),
         centerTitle: false,
         actions: [
-         TextButton(onPressed: (){}, child: Text('Post',style: TextStyle(
+         TextButton(onPressed: postImage, child: Text('Post',style: TextStyle(
            color: Colors.blueAccent,
            fontWeight: FontWeight.bold,
            fontSize: 16,
