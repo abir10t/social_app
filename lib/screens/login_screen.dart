@@ -6,7 +6,6 @@ import 'package:instragram_clone/screens/signup_screen.dart';
 import 'package:instragram_clone/utils/colors.dart';
 import 'package:instragram_clone/utils/utis.dart';
 import 'package:instragram_clone/widgets/text_field_input.dart';
-
 import '../responsive/mobile_screen_layout.dart';
 import '../responsive/responsive_layout_screen.dart';
 import '../responsive/web_screen_layout.dart';
@@ -51,9 +50,8 @@ class _LoginScreenState extends State<LoginScreen> {
        showSnackBar(res, context);
     }
 
-    setState(() {
-      _isLoading = false;
-    });
+    setState(() {_isLoading = false;}
+    );
   }
 
   void navigateToSignup(){

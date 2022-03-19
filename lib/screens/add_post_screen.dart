@@ -164,7 +164,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
                               image: DecorationImage(
                             image: MemoryImage(_file!),
                             fit: BoxFit.fill,
-                            alignment: FractionalOffset.topCenter,
+                           alignment: FractionalOffset.topCenter,
                           )),
                         ),
                       ),

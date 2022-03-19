@@ -101,13 +101,11 @@ class _SignupScreenState extends State<SignupScreen> {
               ),
               Stack(
                 children: [
-                  _image != null
-                      ? CircleAvatar(
+                  _image != null ? CircleAvatar(
                           radius: 64,
                           backgroundImage: MemoryImage(_image!),
                           backgroundColor: Colors.white,
-                        )
-                      : const CircleAvatar(
+                        ) : const CircleAvatar(
                           radius: 64,
                           backgroundImage: AssetImage(
                             "assets/images/user.jpg",
